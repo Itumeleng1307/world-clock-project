@@ -1,14 +1,13 @@
 function updateTime() {
 
-// Johannesburg 
-let johannesburgElement = document.querySelector("#johannesburg");
-let johannesburgDateElement = johannesburgElement.querySelector(".date");
-let johannesburgTimeElement = johannesburgElement.querySelector(".time");
-let johannesburgTime = moment().tz("Africa/Johannesburg");
+// Brazil 
+let brazilElement = document.querySelector("#brazil");
+let brazilDateElement = brazilElement.querySelector(".date");
+let brazilTimeElement = brazilElement.querySelector(".time");
+let brazilTime = moment().tz("America/Sao_Paulo");
 
-johannesburgDateElement.innerHTML = johannesburgTime.format("MMMM Do YYYY");
-johannesburgTimeElement.innerHTML = johannesburgTime.format("h:mm:ss [<small>]A[</small>]");
-
+brazilDateElement.innerHTML = brazilTime.format("MMMM Do YYYY");
+brazilTimeElement.innerHTML = brazilTime.format("h:mm:ss [<small>]A[</small>]");
 
 // Los Angeles
 let losAngelesElement = document.querySelector("#los_angeles");
