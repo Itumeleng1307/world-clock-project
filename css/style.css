@@ -97,14 +97,14 @@ a{
 }
 
 footer {
-    margin: 20px auto;
+    margin: 10px auto;
     padding: 10px;
     text-align: center;
-    font-size: 13px;
+    font-size: 10px;
     font-family: "Rubik", sans-serif;
     color: white;
     background: #1a1616;
-    max-width: 600px;
+    max-width: 580px;
     border-radius: 6px;
     
 }
