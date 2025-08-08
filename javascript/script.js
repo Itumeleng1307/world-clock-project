@@ -36,14 +36,15 @@ let londonTime = moment().tz("Europe/London");
 
 londonDateElement.innerHTML = londonTime.format("MMMM Do YYYY");
 londonTimeElement.innerHTML = londonTime.format("h:mm:ss [<small>]A[</small>]");
-
 }
-
-
 
 function updateCity(event) {
     let cityTimeZone = event.target.value;
-    // Remove _ & / from city name i.e Africa/Johannesburg -> Johannesburg
+    // Change city to user current location
+    if (cityTimeZone === "current") {
+        cityTimeZone = moment.tz.guess();
+    }
+    // Remove "_ & /" from city name i.e Africa/Johannesburg -> Johannesburg
     let cityName = cityTimeZone.replace("_", " ").split("/")[1];
     let cityTime = moment().tz(cityTimeZone);
     let citiesElement = document.querySelector("#cities");
