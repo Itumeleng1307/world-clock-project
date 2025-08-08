@@ -7,11 +7,11 @@ body {
 .container {
     background: #5d4d41;
     background: linear-gradient(233deg, rgba(13, 6, 1, 1) 0%, rgba(28, 25, 24, 1) 50%, rgba(107, 96, 92, 1) 100%);;
-    max-width: 600px;
+    max-width: 550px;
     margin: 0 auto;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 30px;
+    padding: 20px;
     box-shadow: 10px 10px 15px #7b7e81;
     font-family: "Rubik", sans-serif;
     color: white;
@@ -21,8 +21,8 @@ body {
 h1 {
     font-family: "Rubik", sans-serif;
     letter-spacing: 2px;
-    margin: 10px;
-    font-size: 40px;
+    margin: 0 auto;
+    font-size: 50px;
     color: #fff;
     text-align: center;
     animation: glow 1s ease-in-out infinite alternate;
@@ -39,32 +39,45 @@ h1 {
 
 h2 {
     margin: 0 0 10px;
-    font-size: 29px;
+    font-size: 20px;
+}
+
+.select-city {
+    font-family: "Rubik", sans-serif;
+    font-size: 13px;
 }
 
 .city {
-    background: rgba(233, 232, 232, 0.256);
+    background: rgba(233, 232, 232, 0.083);
     margin: 10px 0;
     display: flex;
     justify-content: space-between;
     border: none;
     border-radius: 10px;
     padding: 20px;
+    transition: all 500ms ease-in-out;
+}
+
+.city:hover {
+    background-color: rgba(233, 232, 232, 0.773);
+    color: #060606;
+    transform: scale(1.1);
 }
 
 .date {
     opacity: 0.8;
+    font-size: 15px;
 }
 
 .time {
     font-family: "Orbitron", sans-serif;
-    font-size: 46px;
+    font-size: 40px;
     font-weight: 900;
     letter-spacing: 2px;
 }
 
 .time small {
-    font-size: 22px;
+    font-size: 18px;
     vertical-align: middle;
     line-height: 36px;
 }
@@ -80,13 +93,18 @@ select {
 }
 
 a{
-    color: rgb(89, 153, 232);
+    color: rgb(84, 84, 236);
 }
 
 footer {
-    margin: 20px;
+    margin: 20px auto;
+    padding: 10px;
     text-align: center;
     font-size: 13px;
     font-family: "Rubik", sans-serif;
     color: white;
+    background: #1a1616;
+    max-width: 600px;
+    border-radius: 6px;
+    
 }
