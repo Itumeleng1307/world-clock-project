@@ -62,3 +62,22 @@ setInterval(updateTime, 1000);
 
 let citiesSelectElement = document.querySelector("#city");
 citiesSelectElement.addEventListener("change", updateCity);
+
+// Hide All Cities link at the "homepage"
+document.querySelector("#all-cities").style.display = "none";
+
+// When selected city changes
+document.querySelector("#city").addEventListener("change", function() {
+    let city = this.value;
+    if (city !== "") {
+        document.querySelector("#all-cities").style.display = "block";
+    }
+});
+
+// Whena All Cities link is clicked, reload all cities
+document.querySelector("#all-cities").addEventListener("click", function (event) {
+    event.preventDefault();
+    window.location.reload();
+});
+
+
