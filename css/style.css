@@ -92,6 +92,12 @@ select {
     font-size: 10px;
 }
 
+.all-cities {
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-size: 15px;
+}
+
 a{
     color: rgb(84, 84, 236);
 }
